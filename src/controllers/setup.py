@@ -26,6 +26,12 @@ setup(
             'purepursuit_node = controllers.purepursuit_node:main',
             'rrt_node = controllers.rrt_node:main',
             'mpc_node = controllers.mpc_node:main',
+            'square_driver = controllers.square_driver:main',
+            'lidar_view = controllers.lidar_view:main',
+            'followgap = controllers.followgap:main',
+            'num_vueltas = controllers.num_vueltas:main',
+            'control = controllers.control:main',
+            'teleop = controllers.teleop:main',
         ],
     },
 )
