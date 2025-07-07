@@ -7,7 +7,7 @@ EL controlador Follow the gap es una tecnica de navegacion basada en datos de un
 - Se identifican gaps y se elige el mas amplio
 - Se publica el estado de velocidad y angulo en el tòpico /drive
 ## Estructura del código
-El proyecto cuanta con 2 archivos py
+El proyecto cuenta con 2 archivos py
 ### Archivo followgap.py
 Tiene su clase FollowGap que se suscribe al tòpico de /scan, ademas de ser un publicado de /drive.
 Se define el mètodo lidar_callback que procesa los rangos que seran validos para seleccionar el gap, debido a que el auto tendra una burbujar invisible para mayuor precision de giros. Cuando se elige el mejor gap, se calcula la distancia media para calcular la velocidad a la que deberia ir el auto para no colisionar. Por ultimo, se crean y publican los cambios al tòpico de /drive.
